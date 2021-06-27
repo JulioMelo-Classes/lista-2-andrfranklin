@@ -39,9 +39,13 @@ std::pair<Itr, Itr> minmax( Itr first, Itr last, Compare cmp )
 			if(cmp(*max, *i)){
 					max = i;
 			}
+			if(*max == *i){
+				max = i;
+			}
 			if(cmp(*i, *min)){
 					min = i;
 			}
+
 		}
 
     return std::make_pair( min, max );

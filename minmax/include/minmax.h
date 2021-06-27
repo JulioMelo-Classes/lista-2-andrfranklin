@@ -30,7 +30,6 @@ template <typename Itr, typename Compare >
 std::pair<Itr, Itr> minmax( Itr first, Itr last, Compare cmp )
 {
     // TODO
-		// professor, n consegui entender o motivo dos erros 3 e 5.
 
 		Itr min = first;
 		Itr max = first;

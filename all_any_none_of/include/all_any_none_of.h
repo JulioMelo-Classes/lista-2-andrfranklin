@@ -15,12 +15,23 @@ namespace graal {
 
 /*! 
  * TODO: documentação no estilo doxygen
+ * @tparam InputIt iterator para o range.
+ * @tparam UnaryPredicate o tipo de uma função bool(const T &a)
+ *
+ * @param first Ponteiro para o primeiro elemento do range
+ * @param last Ponteiro para a posição logo após o último elemento do range
+ * @param p A função de comparação que retorna true quando o primeiro parâmetro é menor do que o segundo
+ *
+ * @return all_of Um bool se todos os elementos do range são iguais ao predicado p
+
+ * @return any_of Um bool se pelo menos 1 dos elementos do range são iguais ao predicado p
+
+ * @return none_of Um bool se nenhum dos elementos do range são iguais ao predicado p
  */
 template<class InputIt, class UnaryPredicate>
 bool all_of(InputIt first, InputIt last, UnaryPredicate p)
 {
     // TODO
-		cout<< "entrou na funcao"<<endl;
 
 		bool values = true;
 		int count = 0;
@@ -35,7 +46,6 @@ bool all_of(InputIt first, InputIt last, UnaryPredicate p)
 		if(count < 1){
 			return false;
 		}
-		cout<<endl;
     return values;
 }
 

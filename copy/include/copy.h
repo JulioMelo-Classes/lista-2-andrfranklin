@@ -17,7 +17,16 @@ template<class InputIt>
 InputIt copy(InputIt first, InputIt last, InputIt d_first)
 {
     // TODO
-    return first;
+		InputIt j = d_first;
+		InputIt end = d_first;
+		int count = 0;
+		for(InputIt i = first; i != last; i++){
+			*j = *i;
+			j++;
+			count++;
+		}
+		end = d_first + count;
+    return end;
 }
 
 }

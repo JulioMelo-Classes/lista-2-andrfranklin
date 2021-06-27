@@ -17,7 +17,13 @@ template<class InputIt, class UnaryPredicate>
 InputIt find_if(InputIt first, InputIt last, UnaryPredicate p)
 {
     // TODO
-    return first;
+		for(InputIt i = first; i != last; i++){
+			if(p(*i)){
+				return i;
+				break;
+			}
+		}
+		return last;
 }
 
 }

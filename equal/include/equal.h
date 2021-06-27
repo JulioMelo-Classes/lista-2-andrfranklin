@@ -12,8 +12,19 @@ using std::sort;
 
 namespace graal {
 
-/*! 
+ /*! 
  * TODO: documentação no estilo doxygen
+ * @tparam InputIt1,InputIt2 iterators para os ranges.
+ *
+ * @param first1 Ponteiro para o primeiro elemento do range1
+ * @param first2 Ponteiro para o primeiro elemento do range2
+ * @param last1 Ponteiro para a posição logo após o último elemento do range1
+ * @param last2 Ponteiro para a posição logo após o último elemento do range2
+
+ * @param Equal Função de comparacao
+ *
+ * @return Verdadeiro se todos os elementos de ambos os ranges forem iguais.
+ */
  */
 template<class InputIt1, class InputIt2, class Equal>
 bool equal(InputIt1 first1, InputIt1 last1, InputIt2 first2, Equal eq)

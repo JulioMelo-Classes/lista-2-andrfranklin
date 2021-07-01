@@ -22,13 +22,16 @@ namespace graal {
  *
  * @return A função não retorna nada.
  */
+ /*
+ blz
+ */
 template<class ForwardIt, class Comparison>
 void sort(ForwardIt first, ForwardIt last, Comparison cmp)
 {
     // TODO	
 		for(ForwardIt i = first; i != last; i++){
 				for(ForwardIt j = first; j != last; j++){
-					if(cmp(*i, *j) == true){
+					if(cmp(*i, *j) == true){//aqui vc não precisa fazer == true, pode simplesmente fazer if(cmp(*i,*j))
 						iter_swap(i, j);
 					}
 				}

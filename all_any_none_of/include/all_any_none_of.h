@@ -28,6 +28,9 @@ namespace graal {
 
  * @return none_of Um bool se nenhum dos elementos do range são iguais ao predicado p
  */
+ /*
+ 90% essa documentação é feita por função e não no geral. Vc pode imaginar que não tem sentido uma mesma função com 3 retornos
+ */
 template<class InputIt, class UnaryPredicate>
 bool all_of(InputIt first, InputIt last, UnaryPredicate p)
 {

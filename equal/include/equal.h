@@ -25,11 +25,13 @@ namespace graal {
  *
  * @return Verdadeiro se todos os elementos de ambos os ranges forem iguais.
  */
- */
+/*
+90%, similar à questão all_any_none, vc tem que documentar cada função
+*/ 
 template<class InputIt1, class InputIt2, class Equal>
 bool equal(InputIt1 first1, InputIt1 last1, InputIt2 first2, Equal eq)
 {
-    // TODO
+    // TODO indentação!
 		int count = 0;
 		bool all = true;
 		for(InputIt1 i = first1; i != last1; i++){

@@ -20,14 +20,17 @@ namespace graal {
  *
  * @return iterator do elemento comparado se for igual ao predicado ou last se nenhum elemento for igual ao predicado.
  */
+ /*
+ blz!
+ */
 template<class InputIt, class UnaryPredicate>
 InputIt find_if(InputIt first, InputIt last, UnaryPredicate p)
 {
-    // TODO
+    // TODO indentação!
 		for(InputIt i = first; i != last; i++){
 			if(p(*i)){
 				return i;
-				break;
+				break; //mais um problema de "dead code/cat"
 			}
 		}
 		return last;

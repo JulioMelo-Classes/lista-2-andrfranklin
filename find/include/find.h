@@ -21,14 +21,17 @@ namespace graal {
  *
  * @return iterator do elemento comparado se for igual ao valor T ou last se nenhum elemento for igual ao valor T.
  */
+ /*
+ blz!
+ */
 template<class InputIt, class T, class Equal>
 InputIt find(InputIt first, InputIt last, const T& value, Equal eq)
 {
-    // TODO
+    // TODO indentação!
 		for(InputIt i = first; i != last; i++){
 			if(eq(*i, value)){
 				return i;
-				break;
+				break; //esse break é executado nunca...
 			}
 		}
 		return last;

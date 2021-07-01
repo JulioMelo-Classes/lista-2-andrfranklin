@@ -21,10 +21,13 @@ namespace graal {
  *
  * @return O range com a ordem de seus elementos invertida.
  */
+ /*
+ blz
+ */
 template<class BidirIt>
 void reverse(BidirIt first, BidirIt last){
     // TODO
-    while ((first != last) && (first != --last)) {
+    while ((first != last) && (first != --last)) { //talvez usar um rbegin ficasse mais claro
         iter_swap(first++, last);
     }
 }

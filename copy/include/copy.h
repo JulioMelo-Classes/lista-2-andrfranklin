@@ -20,20 +20,23 @@ namespace graal {
  *
  * @return Um InputIt para o ultimo elemento do segundo range
  */
+ /*
+ ok, não vou descondar a indentação, mas no trabalho nos vemos
+ */
 template<class InputIt>
 InputIt copy(InputIt first, InputIt last, InputIt d_first)
 {
     // TODO
-		InputIt j = d_first;
-		InputIt end = d_first;
-		int count = 0;
-		for(InputIt i = first; i != last; i++){
+		InputIt j = d_first;//indentação!!!!
+		InputIt end = d_first;//indentação!!!!
+		int count = 0;//indentação!!!!
+		for(InputIt i = first; i != last; i++){//indentação!!!!
 			*j = *i;
 			j++;
 			count++;
 		}
-		end = d_first + count;
-    return end;
+		end = d_first + count;//indentação!!!!
+    return end; //indentação!!!!
 }
 
 }

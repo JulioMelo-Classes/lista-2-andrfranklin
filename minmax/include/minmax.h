@@ -26,10 +26,14 @@ namespace graal {
  * @return Um std::pair contendo o menor e maior elemento, nesta ordem
  *
  */
+
+ /*
+ ok!
+ */
 template <typename Itr, typename Compare >
 std::pair<Itr, Itr> minmax( Itr first, Itr last, Compare cmp )
 {
-    // TODO
+    // TODO indentação!
 
 		Itr min = first;
 		Itr max = first;
@@ -38,7 +42,7 @@ std::pair<Itr, Itr> minmax( Itr first, Itr last, Compare cmp )
 			if(cmp(*max, *i)){
 					max = i;
 			}
-			if(*max == *i){
+			if(*max == *i){ //isso aqui não era necessário!
 				max = i;
 			}
 			if(cmp(*i, *min)){
@@ -47,7 +51,7 @@ std::pair<Itr, Itr> minmax( Itr first, Itr last, Compare cmp )
 
 		}
 
-    return std::make_pair( min, max );
+    return std::make_pair( min, max ); //indentação!
 }
 
 }
